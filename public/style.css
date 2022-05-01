@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-bar {
+   
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #035397;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: sans-serif;
+}
+body {
+  background-color: #c8d1db;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.notebox {
+  
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  position: relative;
+  width: 300px;
+
+  margin: 1rem;
+  padding: 1.3rem;
+  background-color: #fff;
+  border-radius: 8px;
+  float: left;
+}
+.notebox p {
+  font-family: 'Shadows Into Light', cursive,sans-serif;
+  padding-top: 0.8rem;
+  font-size: 1.6rem;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  height: auto;
+}
+
+.notebox button {
+   
+  position: relative;
+  float: right;
+  padding: 0.5rem;
+  background-color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #035397;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#form {
+  width: 480px;
+
+  margin: auto;
+
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  border-radius: 8px 8px 50px 8px;
+  position: relative;
+}
+#form input {
+  border: none;
+  height: 2.4rem;
+  font-size: 1.5rem;
+  padding: 1.4rem 1.4rem 0 1.4rem;
+  width: 440px;
+}
+#form textarea {
+  border: none;
+
+  width: 440px;
+
+  /* width: 100%; */
+  overflow: scroll;
+  overflow-x: hidden;
+  font-size: 1.4rem;
+  padding: 1.4rem;
+}
+#form button {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  height: 50px;
+  padding: 0.4rem;
+  border-radius: 50%;
+  background-color: #035397;
+
+  color: #fff;
+  border: none;
+  position: absolute;
+  bottom: 5px;
+  right: 12px;
+  cursor: pointer;
+}
+#form input:focus,
+textarea:focus {
+  outline: none;
+}
+footer {
+  color: #035397;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  #form {
+    width: 96%;
+    margin: 10px auto;
+  }
+}
